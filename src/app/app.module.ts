@@ -10,6 +10,7 @@ import { HeaderComponent } from './components/task-tracker-page/header/header.co
 import { DisplayDateComponent } from './components/task-tracker-page/header/display-date/display-date.component';
 import { TaskComponent } from './components/task-tracker-page/tasks-list/task/task.component';
 import { AddTaskButtonComponent } from './components/task-tracker-page/add-task-button/add-task-button.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,11 +21,12 @@ import { AddTaskButtonComponent } from './components/task-tracker-page/add-task-
     HeaderComponent,
     DisplayDateComponent,
     TaskComponent,
-    AddTaskButtonComponent
+    AddTaskButtonComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
