@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-task-tracker-page',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TaskTrackerPageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router : Router) { }
 
   ngOnInit(): void {
+    this.router.navigate(['/', 'tasks']);
   }
-
+  onClick(){
+    this.router.navigate(['/' , 'new'])
+  }
+  onClick2(){
+    this.router.navigate(['/' , 'tasks'])
+  }
 }

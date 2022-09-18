@@ -1,5 +1,24 @@
 <div class="row h-100 d-flex justify-content-center align-items-center">
     <div class="col-lg-4 col-md-5 col-sm-6 h-75 layer1">
-        <h1>task works</h1>
+        <div class="row headerRow">
+            <div class="col-12">
+                <h1>I am header</h1>
+            </div>            
+        </div>
+        <div class="row taskListRow">
+            <div class="col-12">
+                <router-outlet></router-outlet>
+            </div>
+            <div class="h-25">
+                 <button class="btn btn-primary"(click)="onClick()">click me</button>
+                 <button class="btn btn-primary"(click)="onClick2()">click me</button>
+            </div>
+           
+        </div>
+        <div class="row addTaskRow">
+            <div class="col-12">
+                <h2>I am button</h2>
+            </div>
+        </div>
     </div>
 </div>
