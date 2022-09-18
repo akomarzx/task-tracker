@@ -8,6 +8,8 @@ import { TasksListComponent } from './components/task-tracker-page/tasks-list/ta
 import { AddTaskComponent } from './components/task-tracker-page/add-task/add-task.component';
 import { HeaderComponent } from './components/task-tracker-page/header/header.component';
 import { DisplayDateComponent } from './components/task-tracker-page/header/display-date/display-date.component';
+import { TaskComponent } from './components/task-tracker-page/tasks-list/task/task.component';
+import { AddTaskButtonComponent } from './components/task-tracker-page/add-task-button/add-task-button.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { DisplayDateComponent } from './components/task-tracker-page/header/disp
     TasksListComponent,
     AddTaskComponent,
     HeaderComponent,
-    DisplayDateComponent
+    DisplayDateComponent,
+    TaskComponent,
+    AddTaskButtonComponent
   ],
   imports: [
     BrowserModule,

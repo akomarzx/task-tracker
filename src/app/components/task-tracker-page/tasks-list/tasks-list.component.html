@@ -1,1 +1,5 @@
-<p>tasks-list works!</p>
+<div class="row h-100">
+  <div class="col-12">
+    <app-task *ngFor="let task of taskList" [task]="task"></app-task>
+  </div>
+</div>

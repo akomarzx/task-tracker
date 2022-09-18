@@ -13,10 +13,4 @@ export class TaskTrackerPageComponent implements OnInit {
   ngOnInit(): void {
     this.router.navigate(['/', 'tasks']);
   }
-  onClick(){
-    this.router.navigate(['/' , 'new'])
-  }
-  onClick2(){
-    this.router.navigate(['/' , 'tasks'])
-  }
 }
