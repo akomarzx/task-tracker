@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { TaskTrackerPageComponent } from './components/task-tracker-page/task-tracker-page.component';
 import { TasksListComponent } from './components/task-tracker-page/tasks-list/tasks-list.component';
 import { AddTaskComponent } from './components/task-tracker-page/add-task/add-task.component';
+import { HeaderComponent } from './components/task-tracker-page/header/header.component';
+import { DisplayDateComponent } from './components/task-tracker-page/header/display-date/display-date.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TaskTrackerPageComponent,
     TasksListComponent,
-    AddTaskComponent
+    AddTaskComponent,
+    HeaderComponent,
+    DisplayDateComponent
   ],
   imports: [
     BrowserModule,
