@@ -2,14 +2,6 @@ import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 import { ITask } from 'src/app/interface/ITask';
 
-let list: ITask[] = [
-  { taskContent: 'Task1', taskDate: new Date() },
-  { taskContent: 'Task2', taskDate: new Date() }, { taskContent: 'Task1', taskDate: new Date() },
-  { taskContent: 'Task2', taskDate: new Date() }, { taskContent: 'Task1', taskDate: new Date() },
-  { taskContent: 'Task2', taskDate: new Date() }, { taskContent: 'Task1', taskDate: new Date() },
-  { taskContent: 'Task2', taskDate: new Date() }, { taskContent: 'Task1', taskDate: new Date() },
-  { taskContent: 'Task2', taskDate: new Date() },
-]
 
 @Injectable({
   providedIn: 'root'
@@ -17,9 +9,10 @@ let list: ITask[] = [
 export class TasksService {
 
   taskList$: BehaviorSubject<ITask[]>;
-
+  private taskList: ITask[]
   constructor() {
-    this.taskList$ = new BehaviorSubject<ITask[]>(list)
+    this.taskList = []
+    this.taskList$ = new BehaviorSubject<ITask[]>(this.taskList)
   }
 
   addNewTask(task: ITask) {
